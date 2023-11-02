@@ -1,0 +1,52 @@
+/* CLASS ve ID Kullanılır */
+
+body{
+    background-color: brown;
+}
+
+/* CLASS . (nokta) ile tanımlanır */
+
+.anaGovde
+{
+    background: beige;
+    color: black;
+    font-size: 26px;
+}
+
+.anaDiv{
+    /*GENİŞLİK*/
+    width: 150px;
+    width: 50%;
+
+    /* YÜKSEKLİK */
+    height: 500px;
+    height: 40%;
+    /* height: 100vh; RESPONSIVE */
+
+    /*HİZLAMA*/
+    margin-top: 25px;
+    margin-right: 250px;
+    margin-bottom: 80px;
+    margin-left: 120px;
+
+    margin:150px;
+
+    margin:80px 100px;
+
+    margin:180px 150px 320px 35px;
+
+}
+.altDiv{
+    /* width: 80%; */
+    margin: 10px 45px 0 15px;
+
+    padding:20px 50px 35px 20px;
+    padding:80px 100px;
+
+    padding-top: 25px;
+    padding-right: 250px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+
+}
+
