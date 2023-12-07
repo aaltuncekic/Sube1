@@ -1,0 +1,99 @@
+<html>
+    <head><title>Formlar</title></head>
+    <body>
+        <form 
+        action="" 
+        method="post"
+         enctype="multipart/form-data" >
+            <div>
+                <input
+                    type="text"
+                    name="ad"
+                    placeholder="Ad Soyad"
+                    value="Alper ALTUNÇEKİÇ"
+                    disabled
+                />
+            </div>
+            <div>
+                <input 
+                    type="email" 
+                    name="eposta"
+                    placeholder="E-posta"
+                    required
+                    />
+            </div>
+            <div>
+                <input 
+                    type="password"
+                    name="sifre"
+                    placeholder="Şifre Giriniz"
+                    required
+                    minlength="6"
+                    maxlength="10"
+                    pattern="[0-9]{*}"
+                    />
+                    
+            </div>
+            
+            <div> Beni Hatırla
+                <input
+                type="checkbox" 
+                checked
+                name="benihatirla"/>
+            </div>
+
+            <div> Oturum Açık Kalsın mı?<br />
+                Evet <input
+                    value="evet"
+                    type="radio" 
+                    name="oturum" />
+                Hayır <input
+                    value="hayir"
+                    type="radio" checked 
+                    name="oturum" />
+            </div>
+            <div>
+                <input 
+                    type="number"
+                    name="sayi"
+                    min="10"
+                    max="50"
+                    step="5"
+                    />
+                <input type="color" />
+                <input type="date" name="tarih" />
+                <input type="datetime-local" name="tarihsaat" />
+                <input type="file" name="dosya" />
+                <input type="hidden" name="id" value="bu benim" />
+                <input type="tel" name="phone" 
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                
+            </div>
+
+            <div>
+                <select name="sinif" 
+                required
+                multiple >
+                    <option value="">Lütfen Seçiniz</option>
+                    <option value="1">1. Sınıf</option>
+                    <option value="2">2. Sınıf</option>
+                    <option value="3">3. Sınıf</option>
+                    <option value="4">4. Sınıf</option>
+                </select>
+            </div>
+
+            <div>
+                <textarea name="biyografi" rows="10" cols="50"></textarea>
+            </div>
+
+
+            <div>
+                <input type="reset" value="Temizle"/>
+                <input type="submit" />
+              
+        <button type="submit">Kayıt Ol</button>
+            </div>
+        </form>
+
+    </body>
+</html>
