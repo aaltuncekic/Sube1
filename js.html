@@ -1,0 +1,124 @@
+<html>
+    <head><title>Temel JS</title></head>
+    <body>
+
+        <form>
+            <div>
+                <input 
+                name="kullaniciadi" 
+                id="username"
+                placeholder="Kullanıcı Adı"/>
+                <span id="userError"></span>
+            </div>
+            <div>
+                <input name="sifre"
+                id="password" type="password" 
+                placeholder="Şifre"/>
+                <span id="passError"></span>
+            </div>
+            <div>
+               <a onclick="dogrula()" >Giriş Yap</a>
+            </div>
+            
+        </form>
+
+        <script>
+            function dogrula(){
+                var username = document.getElementById("username").value
+                var password = document.getElementById("password").value
+                
+                document.getElementById("userError").innerText=""
+                document.getElementById("passError").innerText=""
+                
+                if(!username && !password){
+                    document.getElementById("userError").innerText="Kullanıcı adı giriniz"
+                    // alert("Kullanıcı adı ve şifre giriniz")
+                }
+                else if(!username){
+                    document.getElementById("userError").innerText="Kullanıcı adı giriniz"
+
+                    // alert("Kullanıcı adı giriniz")
+                }
+                else if(!password){
+                    document.getElementById("passError").innerHTML="<b style='color:red'>Şifre giriniz</b>"
+
+                }
+                
+            }
+        </script>
+
+        <script>
+
+            //DEĞİŞKEN
+            var degisken;
+            degisken = "Merhaba"
+            degisken = 5 //string
+            degisken = "5" //int Number
+            degisken = new Date().toLocaleDateString()
+            // degisken = true //boolean
+             //alert(degisken)
+        </script>
+
+        <script>
+            //METHOD - FONKSİYON
+
+            function fonksiyon()
+            {
+             alert("Method çalıştı")   
+            }
+
+            //fonksiyon çalıştır
+            //fonksiyon()
+
+
+            function fonksiyon2(parametre="")
+            {
+                alert(parametre)
+            }
+            // fonksiyon2("AAA")
+        </script>
+
+        <script>
+            //KOŞUL İFADELERİ
+            function fonk3(deger){
+
+                if(deger){
+                   alert(deger)
+                }
+                else{
+                    alert("Değer atanmadı")
+                }
+            }
+
+            // fonk3()
+
+
+            function fonk4(deger){
+                
+                if(deger>=5){
+                    alert("sayı 5 veya daha büyüktür")
+                }
+                else if(deger>0){
+                    alert("Sayı pozitif")
+                    console.log("1. şart")
+                }
+                else if(deger<0){
+                    alert("Sayı 2 negatif")
+                    console.log("2. şart")
+                }
+                else if(deger == 0){
+                    alert("Sayı 0 dır")
+                    console.log("3. şart")
+                }
+                
+                
+                else{
+                    console.log("Hiçbir şart sağlanmadı")
+                }
+            }
+
+            // fonk4(4)
+
+        </script>
+    </body>
+</html>
