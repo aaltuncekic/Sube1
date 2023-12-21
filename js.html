@@ -40,7 +40,31 @@
         </div>
         <script>
             function hesapla(){
-                
+                var val1 = Number(document.getElementById("val1").value)
+                var val2 = Number(document.getElementById("val2").value)
+                var islem = document.getElementById("islem").value
+
+                    var sonuc =0;
+                    if(islem==1){//Çarpma
+                        sonuc = val1*val2;
+                    }
+                    else if(islem==2){//Bölme
+                        sonuc = val1/val2
+                    }
+                    else if(islem==3){//TOPLAMA
+                        sonuc = val1+val2
+                    }
+                    else if(islem==4){//ÇIKARTMA
+                        sonuc=val1-val2
+                    }
+                    else {
+                        alert("tanımsız istek")
+                    }   
+                    sonucYazdir(sonuc)
+    }
+
+            function sonucYazdir(deger){
+                var sonucYazdir = document.getElementById("sonuc1").innerHTML="<b>Sonuç: "+deger+"</b>"
             }
         </script>
         <script>
