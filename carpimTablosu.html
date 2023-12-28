@@ -148,5 +148,27 @@
                 <td></td>
             </tr>
         </table>
+
+        <table border="1" width="100%">
+            <script>
+                for(var i = 0; i<11; i++){
+                    document.write("<tr>")
+                        document.write('<td>'+i+'</td>')
+                        // if(i>0){
+                        //     document.write('<td>'+i+'</td>')
+                        // }
+                        // if(i==0){
+                        //     document.write('<td> </td>')
+                        // i=1
+                        // }
+                        for(var k=1; k<=10; k++){
+                            document.write('<td>'+i*k+'</td>')
+                        }
+                        document.write("</tr>")
+                }
+            </script>
+            
+            
+        </table>
     </body>
 </html>
